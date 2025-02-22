@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       await login(email, password);
-      navigate('/'); // Redirect to home page after successful login
+      navigate('/home'); // Redirect to home page after successful login
     } catch (error) {
       setError('Failed to log in. Please check your credentials.');
       console.error('Login error:', error.message);

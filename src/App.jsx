@@ -18,7 +18,7 @@ const App = () => {
         <Routes>
           {/* Home Page (Protected Route) */}
           <Route
-            path="/"
+            path="/home"
             element={
               <PrivateRoute>
                 <Home />
@@ -27,7 +27,7 @@ const App = () => {
           />
 
           {/* Login Page */}
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
 
           {/* Signup Page */}
           <Route path="/signup" element={<Signup />} />
